@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="pyment.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <h1 class="main_heading">Payment Form</h1>
+        <p>Required field Followed by *</p>
+        <h2>Contect Information</h2>
+
+        <p>
+          Name: *<input
+            type="text"
+            name="name"
+            required
+            placeholder="Enter your name"
+          />
+        </p>
+        <fieldset>
+          <legend class="gender">Gender *</legend>
+          <p>
+            Male<input type="radio" name="gender" id="male" required />
+            Female<input type="radio" name="gender" id="female" required />
+          </p>
+        </fieldset>
+
+        <p>
+          Address:
+          <textarea
+            name="address"
+            id="address"
+            cols="100"
+            rows="8"
+            placeholder="Enetr your address"
+          ></textarea>
+        </p>
+
+        <p>
+          Email: *<input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="example123@gmail.com"
+          />
+        </p>
+
+        <p>
+          Pincode: *<input
+            type="number"
+            name="pincode"
+            id="pincode"
+            required
+            placeholder="Enter your pincode"
+          />
+        </p>
+
+        <h2>Payment Information</h2>
+        <p>
+          Card Type: *
+          <select name="card type" id="card type" required>
+            <option value="">Select a Card Type</option>
+            <option></option>
+            <option value="Visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Mastercard">Mastercard</option>
+          </select>
+        </p>
+
+        <p>
+          Card number: *<input
+            type="number"
+            name="card number"
+            id="card number"
+            required
+          />
+        </p>
+
+        <p>
+          Expiration Date: *<input
+            type="date"
+            name="exp date"
+            id="exp date"
+            required
+          />
+        </p>
+
+        <p>CVV: *<input type="password" name="cvv" id="cvv" required placeholder="Enter your cvv"/></p>
+
+        <input type="submit" value="Pay Now" />
+      </form>
+    </div>
+  </body>
+</html>
